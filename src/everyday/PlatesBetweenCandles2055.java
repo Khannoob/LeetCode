@@ -7,9 +7,9 @@ import java.util.Arrays;
  * @author: Khan
  * @create: 2022-03-09 16:43
  */
-public class platesBetweenCandles2055 {
+public class PlatesBetweenCandles2055 {
     public static void main(String[] args) {
-        platesBetweenCandles2055 pb = new platesBetweenCandles2055();
+        PlatesBetweenCandles2055 pb = new PlatesBetweenCandles2055();
         int[][] queries = {{1, 17}, {4, 5}, {14, 17}, {5, 11}, {15, 16}};
         int[] ints = pb.platesBetweenCandles("***|**|*****|**||**|*", queries);
         System.out.println(Arrays.toString(Arrays.stream(ints).toArray()));
