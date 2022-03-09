@@ -1,7 +1,6 @@
 package tree;
 
 
-import org.w3c.dom.Node;
 
 public class BinaryTreePruning814 {
 
