@@ -31,7 +31,7 @@ public class HeapSort {
         while (rootIndex * 2 + 2 <= n) {
             int clIndex = rootIndex * 2 + 1;
             int crIndex = rootIndex * 2 + 2;
-
+//找到右下角最大节点
             if (crIndex < n && tree[clIndex] < tree[crIndex]) {
                 clIndex = crIndex;
             }
@@ -42,7 +42,7 @@ public class HeapSort {
             int temp = tree[rootIndex];
             tree[rootIndex] = tree[clIndex];
             tree[clIndex] = temp;
-            rootIndex = clIndex;
+            rootIndex = clIndex;//向下递归
         }
     }
 }
