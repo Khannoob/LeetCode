@@ -1,4 +1,10 @@
-    static class TreeNode {
+package tree;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Objects;
+
+public class TreeNode {
         // 用于获得树的层数
         private static int getTreeDepth(TreeNode root) {
             return root == null ? 0 : (1 + Math.max(getTreeDepth(root.left), getTreeDepth(root.right)));
